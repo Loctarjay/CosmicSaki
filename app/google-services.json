@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "796235382731",
+    "firebase_url": "https://cosmicsaki-9b41a.firebaseio.com",
+    "project_id": "cosmicsaki-9b41a",
+    "storage_bucket": "cosmicsaki-9b41a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796235382731:android:07af4ef19aa10ddd8a004e",
+        "android_client_info": {
+          "package_name": "com.example.cosmicsaki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796235382731-qcmp4mt27pmg0imu349v0cvtbr7aso7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOgFlmpqjsBaJOQOP8KNmCna_dmMXjiDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796235382731-qcmp4mt27pmg0imu349v0cvtbr7aso7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
