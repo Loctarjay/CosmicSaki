@@ -83,15 +83,17 @@ public class FirebaseManager {
                                         Double.parseDouble(snap.get("longitude").toString()),
                                         snap.get("userAccess").toString());
                                 UserStorage.list.add(user);
-                                if (snap.get("email").toString().equalsIgnoreCase(email) && loginCounter == 0) {
+                                if (snap.get("email").toString().equalsIgnoreCase(email)) {
                                     Log.i("test1", "right account fetched");
                                     intentLogin.putExtra(MainActivity.usernameAccess, user.getUsername());
                                     intentLogin.putExtra(MainActivity.userAccess, user.getUserAccess());
+
+                                    // Getting the streaming schedule time
+                                    getSchedule();
                                     activity.startActivity(intentLogin);
-                                    loginCounter++;
+                                    //loginCounter++;
                                 }
                             }
-                            getSchedule();
                         }
                     });
                 }else{
@@ -100,7 +102,7 @@ public class FirebaseManager {
                 }
             }
         });
-        loginCounter = 0;
+        //loginCounter = 0;
     }
 
     public void signUpWithoutLocation(final String email, String pwd, final String username){

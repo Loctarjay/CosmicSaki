@@ -22,7 +22,7 @@ public class DrinkRecipe extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_drinks);
 //        recyclerView = findViewById(R.id.drinkRecyclerView);
 //        layoutManager = new LinearLayoutManager(this);
 //        recyclerView.setLayoutManager(layoutManager);
@@ -36,7 +36,6 @@ public class DrinkRecipe extends AppCompatActivity implements View.OnClickListen
 
         if (UserView.currentUserAccess.equalsIgnoreCase("admin") ||
                 UserView.currentUserAccess.equalsIgnoreCase("mod")){
-
             addDrink.setVisibility(View.VISIBLE);
         }
     }
