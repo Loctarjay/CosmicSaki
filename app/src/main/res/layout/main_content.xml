@@ -68,13 +68,13 @@
         android:id="@+id/geolocations"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="20dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitXY"
         android:tint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/schedules"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/schedules"
-        app:layout_constraintTop_toBottomOf="@+id/schedules"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
         app:srcCompat="@mipmap/ic_geolocation_foreground" />
 
     <ImageButton
@@ -148,5 +148,61 @@
         app:layout_constraintEnd_toEndOf="@+id/drinks"
         app:layout_constraintTop_toTopOf="@+id/geolocations"
         app:srcCompat="@drawable/ic_group_24dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/schedules"
+        app:layout_constraintEnd_toEndOf="@+id/schedules"
+        app:layout_constraintStart_toStartOf="@+id/schedules" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gallery"
+        app:layout_constraintEnd_toEndOf="@+id/gallery"
+        app:layout_constraintStart_toStartOf="@+id/gallery" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drinks"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/drinks"
+        app:layout_constraintEnd_toEndOf="@+id/drinks"
+        app:layout_constraintStart_toStartOf="@+id/drinks" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Location"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/geolocations"
+        app:layout_constraintStart_toStartOf="@+id/geolocations"
+        app:layout_constraintTop_toBottomOf="@+id/schedules" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/playerGames"
+        app:layout_constraintEnd_toEndOf="@+id/playerGames"
+        app:layout_constraintStart_toStartOf="@+id/playerGames" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
